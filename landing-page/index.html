@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiteraTour | Sua Jornada Literária</title>
+
+    <!-- Meta tags para SEO -->
+    <meta
+      name="description"
+      content="LiteraTour - Descubra novos mundos através da leitura. Livros nacionais e internacionais selecionados para você."
+    />
+    <meta
+      name="keywords"
+      content="livros, ebooks, literatura, leitura, livraria online, clube do livro"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <button class="theme-toggle" aria-label="Alternar tema">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="./assets/images/logo-livraria.png" alt="LiteraTour Logo" />
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#categorias">Categorias</a>
+          <a href="#destaques">Destaques</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <button class="menu-toggle" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Descubra histórias incríveis</h1>
+        <p>
+          Uma nova aventura em cada página. Encontre seu próximo livro favorito.
+        </p>
+        <div class="cta-buttons">
+          <a href="#destaques" class="btn btn-primary">Explorar</a>
+          <a href="#categorias" class="btn btn-secondary">Categorias</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorias Section -->
+    <section id="categorias" class="servicos">
+      <h2>Explore por Categoria</h2>
+      <div class="servicos-grid">
+        <div class="servico-card">
+          <i class="fas fa-book-open"></i>
+          <h3>Ficção</h3>
+          <p>Romances, Fantasia e Aventura</p>
+        </div>
+        <div class="servico-card">
+          <i class="fas fa-brain"></i>
+          <h3>Não-Ficção</h3>
+          <p>Biografia, História e Ciência</p>
+        </div>
+        <div class="servico-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Acadêmicos</h3>
+          <p>Técnicos e Didáticos</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destaques da Semana Section -->
+    <section id="destaques" class="portfolio">
+      <h2>Destaques da Semana</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img
+            src="assets/images/destaque-livro1.png"
+            alt="Harry Potter e o Cálice de Fogo"
+          />
+          <div class="portfolio-overlay">
+            <h3>Harry Potter e o Cálice de Fogo</h3>
+            <p>J.K. Rowling</p>
+            <span class="price">R$ 54,90</span>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img
+            src="assets/images/destaque-livro2.png"
+            alt="Harry Potter e a Pedra Filosofal"
+          />
+          <div class="portfolio-overlay">
+            <h3>Harry Potter e a Pedra Filosofal</h3>
+            <p>J.K. Rowling</p>
+            <span class="price">R$ 49,90</span>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img
+            src="assets/images/destaque-livro3.png"
+            alt="Harry Potter e o Prisioneiro de Azkaban"
+          />
+          <div class="portfolio-overlay">
+            <h3>Harry Potter e o Prisioneiro de Azkaban</h3>
+            <p>J.K. Rowling</p>
+            <span class="price">R$ 52,90</span>
+          </div>
+        </div>
+      </div>
+      <div class="destaque-cta">
+        <a href="#" class="btn btn-primary">Ver Todos os Destaques</a>
+      </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <div class="contato-container">
+        <form id="contato-form" class="contato-form">
+          <input type="text" placeholder="Nome" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Mensagem" required></textarea>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Goodreads"
+            ><i class="fab fa-goodreads"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Criado por Matheus</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
